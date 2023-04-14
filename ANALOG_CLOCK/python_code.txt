@@ -1,0 +1,110 @@
+from
+turtle import Turtle, Screen import datetime
+window
+Screen() window.title( title("Analog Digital
+Clock" window.bgcolor( bgcolor("
+window.setup( width 1000 height 800
+circle
+Turtle() circle.penup()
+circle.pencolor( pencolor("# circle.speed( 0
+circle.pensize( 25 circle.hideturtle()
+circle.goto( 0 390 circle.pendown()
+circle.fillcolor( fillcolor("# circle.begin_fill()
+circle.circle( 400 circle.end_fill()
+hHand
+Turtle() hHand.shape( shape("
+hHand.color( color(" hHand.speed( 10
+hHand.shapesize(
+stretch_wid 0.4 stretch_len 18
+mHand
+Turtle() mHand.shape( shape("
+mHand.color( color(" mHand.speed( 10
+mHand.shapesize(
+stretch_wid 0.4 stretch_len 26
+sHand
+Turtle() sHand.shape( shape("
+sHand.color( color("dark red" sHand.speed( 10
+sHand.shapesize(
+stretch_wid 0.4 stretch_len 36
+centerCircle
+Turtle() centerCircle.shape( shape("
+centerCircle.color( color("
+centerCircle.shapesize(
+stretch_wid 1.5
+stretch_len 1.5
+pen
+Turtle() pen.speed( 0 pen.color( color("
+pen.penup()
+pen.hideturtle() pen.goto( 170 260
+pen.write(
+write(" align ==" font =(=(" 50
+"
+pen.penup()
+pen.hideturtle() pen.goto( 300 140
+pen.write(
+write(" align ==" font =(=(" 50
+"
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(340340,,--3030))
+pen.write(
+pen.write("3""3",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(300300,,--200200))
+pen.write(
+pen.write("4""4",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(170170,,--325325))
+pen.write(
+pen.write("5""5",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(00,,--370370))
+pen.write(
+pen.write("6""6",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(--170170,,--325325))
+pen.write(
+pen.write("7""7",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup
+pen.penup()()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(--300300,,--200200))
+pen.write(
+pen.write("8""8",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(--340340,,--3030))
+pen.write(
+pen.write("9""9",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(--280280,,140140))
+pen.write(
+pen.write("10""10",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(--160160,,260260))
+pen.write(
+pen.write("11""11",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+pen.penup()
+pen.penup()pen.hideturtle()pen.hideturtle()pen.goto(pen.goto(00,,300300))
+pen.write(
+pen.write("12""12",,alignalign=="center""center",,fontfont=(=("Algerian""Algerian",,5050,,"bold""bold"))))
+def
+defmovehHandmovehHand():():
+currentHourInternal
+currentHourInternal==datetime.datetime.now().hourdatetime.datetime.now().hourdegreedegree==(currentHourInternal(currentHourInternal--1515))**--3030currentMinuteInternalcurrentMinuteInternal==datetime.datetime.now().minutedatetime.datetime.now().minutedegreedegree==degreedegree++--0.50.5**currentMinuteInternalcurrentMinuteInternalhHand.setheading(degree)hHand.setheading(degree)
+window.ontimer(movehHand,
+window.ontimer(movehHand,6000060000))defdefmovemHandmovemHand():():
+currentMinuteInternal
+currentMinuteInternal==datetime.datetime.now().minutedatetime.datetime.now().minute
+degree
+degree==(currentMinuteInternal(currentMinuteInternal--1515))**--66currentSecondInternalcurrentSecondInternal==datetime.datetime.now().seconddatetime.datetime.now().seconddegreedegree==degreedegree++((--currentSecondInternalcurrentSecondInternal**0.10.1))mHand.setheading(degreemHand.setheading(degree))
+window.ontimer(movemHand,
+window.ontimer(movemHand,10001000))
+def
+defmovesHandmovesHand():():
+currentSecondInternal
+currentSecondInternal==datetime.datetime.now().seconddatetime.datetime.now().seconddegreedegree==(currentSecondInternal(currentSecondInternal--1515))**--66sHand.setheading(degree)sHand.setheading(degree)
+window.ontimer(movesHand,
+window.ontimer(movesHand,10001000))
+window.ontimer(movehHand,
+window.ontimer(movehHand,11))
+window.ontimer(movemHand,
+window.ontimer(movemHand,11))
+window.ontimer(movesHand,
+window.ontimer(movesHand,11))window.exitonclick()window.exitonclick
